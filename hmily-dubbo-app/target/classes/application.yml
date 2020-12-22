@@ -1,0 +1,23 @@
+server:
+  port: 12347
+
+spring:
+  application:
+    name: app
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/test
+      username: root
+      password: qwe123@@
+
+dubbo:
+#  scan:
+#    base-packages: indi.wuyue.hmily.dubbo.provider.a.rpc
+#  protocol:
+#    name: dubbo
+#    port: 20000
+  registry:
+    address: 127.0.0.1:2181
+    protocol: zookeeper
+
